@@ -1,6 +1,13 @@
 ﻿# dsa
+The folder "xc" was edited and debugged by Xcode IDE<br/>
+The folder "vs" was edited and debugged by Visual Studio IDE<br/>
+<br/>
+<br/>
+<br/>
 This Data Structure and Algorithm  project includes:<br/>
+<br/>
 **Data Structure**<br/>
+<br/>
 1.Arraylist <br/>
 2.Linklist<br/>
 3.Stack<br/>
@@ -20,8 +27,11 @@ This Data Structure and Algorithm  project includes:<br/>
 17.BloomFilter<br/>
 18.SkipList<br/>
 19.B+ Tree(***undo***)
-
+<br/>
+<br/>
+<br/>
 **Algorithm**<br/>
+<br/>
 1.Sort<br/>
 2.Recursion<br/>
 3.BackTrace<br/>
