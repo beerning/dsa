@@ -7,7 +7,7 @@ The folder "vs" was edited and debugged by Visual Studio IDE<br/>
 This Data Structure and Algorithm  project includes:<br/>
 <br/>
 
-<h2>**Data Structure**</h2><br/>
+<h2>Data Structure</h2><br/>
 <br/>
 1.Arraylist <br/>
 2.Linklist<br/>
@@ -27,10 +27,10 @@ This Data Structure and Algorithm  project includes:<br/>
 16.Graph<br/>
 17.BloomFilter<br/>
 18.SkipList<br/>
-19.B+ Tree(***undo***)
+
 <br/>
 
-<h2>**Algorithm**</h2><br/>
+<h2>Algorithm</h2><br/>
 <br/>
 1.Sort<br/>
 2.Recursion<br/>
@@ -38,6 +38,5 @@ This Data Structure and Algorithm  project includes:<br/>
 4.Greedy<br/>
 5.Divide and Conquer<br/>
 6.String /KMP<br/>
-7.DP(Dynamic Programming) ***undo***<br/>
 
 
