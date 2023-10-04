@@ -30,7 +30,7 @@ void testHT(){
 
 
 int main(int argc, const char * argv[]) {
-
+    //cout << "Hello World!" << endl;
     testHT();
     //testFile4();
     

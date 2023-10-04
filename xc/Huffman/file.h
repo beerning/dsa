@@ -11,10 +11,10 @@
 #include <map>
 #include <fstream>
 #ifdef _WIN64
-#define FILE "F:/aberning/Documents/dev/c++/dsa/xc/Huffman/text1.txt"
-//#define FILE "F:\\aberning\\Documents\\dev\\c++\\dsa\\xc\\Huffman\\text2.txt"
+#define FILE "F:/aberning/Documents/dev/cpp/dsa/xc/Huffman/text3.txt"
+//#define FILE "F:\\aberning\\Documents\\dev\\cpp\\dsa\\xc\\Huffman\\text3.txt"
 #else
-#define FILE "/Users/aberning/Documents/dev/c++/dsa/xc/Huffman/text1.txt"
+#define FILE "/Users/aberning/Documents/dev/cpp/dsa/xc/Huffman/text3.txt"
 #endif
 
 void testmap(){

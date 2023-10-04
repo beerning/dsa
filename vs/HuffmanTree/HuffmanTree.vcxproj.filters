@@ -15,16 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\xc\Huffman\BinaryHeap.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\xc\Huffman\file.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\xc\Huffman\Heap.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\xc\Huffman\HuffmanTree.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xc\Huffman\Heap\BinaryHeap.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xc\Huffman\Heap\Heap.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -34,9 +34,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <Text Include="..\..\xc\Huffman\test.txt" />
     <Text Include="..\..\xc\Huffman\text1.txt" />
     <Text Include="..\..\xc\Huffman\text2.txt" />
     <Text Include="..\..\xc\Huffman\text3.txt" />
-    <Text Include="..\..\xc\Huffman\Heap\test.txt" />
   </ItemGroup>
 </Project>

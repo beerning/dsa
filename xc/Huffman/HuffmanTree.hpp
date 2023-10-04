@@ -8,7 +8,7 @@
 #ifndef HuffmanTree_hpp
 #define HuffmanTree_hpp
 
-#include "Heap/BinaryHeap.hpp"
+#include "BinaryHeap.hpp"
 #include <unordered_map>
 #include <queue>
 #include <fstream>
