@@ -1,37 +1,5 @@
 ﻿
-int count = 0;
-/**
- 组合 （combination）
 
- @param index 表示某个组合中的索引
- @param begin 表示从数组A中begin位置开始寻找
- @param n 表示数组长度
- @param m  表示组合中个数
- @param A 表示原数组
- @param C 表示组合数组
- */
-void Comb(int index, int begin, int n, int m, int* A, int* C) {
-    if (index == m) {
-        for (int i = 0; i < m; i++)
-            printf("%d ", C[i]);
-        printf("\n");
-        count++;
-        return;
-    }
-    for (int j = begin; j <= n - m + index; j++) {
-        C[index] = A[j];
-        Comb(index + 1, j + 1, n, m, A, C);
-    }
-}
-
-void testComb() {
-    int A[] = { 1,2,3,4 };
-    int m = 3;
-    int* C = (int*)malloc(m * sizeof(int));  //int *C=new int[m+1];
-    Comb(0, 0, sizeof(A) / sizeof(A)[0], m, A, C);
-    printf("total:%d\n", count);
-    free(C);                      //delete []C;
-}
 
 
 //阶乘n!

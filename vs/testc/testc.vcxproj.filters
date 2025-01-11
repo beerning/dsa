@@ -42,6 +42,9 @@
     <ClCompile Include="utils.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="combination.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="_ctime.h">

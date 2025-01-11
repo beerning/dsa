@@ -130,6 +130,7 @@
   <ItemGroup>
     <ClCompile Include="arr.c" />
     <ClCompile Include="chat.c" />
+    <ClCompile Include="combination.c" />
     <ClCompile Include="guess.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="permutation.c" />
