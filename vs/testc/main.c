@@ -25,8 +25,8 @@ int main(int argc, const char * argv[]) {
     //test_duplicates();
     //testSqrt();
     //testShuffle();
-	//testPerm();
-	testComb();
+	testPerm();
+	//testComb();
 
     return 0;
 }
