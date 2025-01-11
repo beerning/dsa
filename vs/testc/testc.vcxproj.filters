@@ -36,6 +36,12 @@
     <ClCompile Include="chat.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="permutation.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="_ctime.h">

@@ -132,9 +132,11 @@
     <ClCompile Include="chat.c" />
     <ClCompile Include="guess.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="permutation.c" />
     <ClCompile Include="sqrt.c" />
     <ClCompile Include="test.c" />
     <ClCompile Include="ticket.c" />
+    <ClCompile Include="utils.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="_ctime.h" />

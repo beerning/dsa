@@ -57,12 +57,8 @@ void test_duplicates() {
 
 #include<time.h>
 // 洗牌 
-void swap(int* a, int* b) {
-    *a = *a ^ *b;
-    *b = *a ^ *b;
-    *a = *a ^ *b;
-}
 
+extern void swap(int* a, int* b);
 void shuffle(int* a, int n) {
     time_t t;
     srand((unsigned)time(&t));

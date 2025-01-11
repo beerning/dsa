@@ -15,6 +15,8 @@ extern void run(void);
 extern void test_duplicates(void);
 extern void testSqrt(void);
 extern void testShuffle(void);
+extern void testPerm(void);
+
 
 int main(int argc, const char * argv[]) {
     
@@ -22,6 +24,9 @@ int main(int argc, const char * argv[]) {
     //run();
     //test_duplicates();
     //testSqrt();
-    testShuffle();
+    //testShuffle();
+	testPerm();
+
+
     return 0;
 }

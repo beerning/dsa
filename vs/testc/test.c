@@ -1,39 +1,4 @@
-﻿int n = 0;
-
-/**
- 全排列 （permutation）
-
- @param list 数组
- @param k 传0,代表从第0个元素开始
- @param m 数组长度-1
- */
-void perm(int* list, int k, int m) {
-    int i;
-    if (k == m) {
-        for (i = 0; i <= m; i++)
-            printf("%d ", list[i]);
-        printf("\n");
-        n++;
-    }
-    else {
-        for (i = k; i <= m; i++) {
-            swap(&list[k], &list[i]);
-            perm(list, k + 1, m);
-            swap(&list[k], &list[i]);
-        }
-    }
-}
-
-void testPerm() {
-    int list[] = { 1,2,3 };
-    perm(list, 0, sizeof(list) / sizeof(list)[0] - 1);
-    printf("total:%d\n", n);
-
-}
-
-
-
-
+﻿
 int count = 0;
 /**
  组合 （combination）
