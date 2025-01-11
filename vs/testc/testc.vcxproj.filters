@@ -21,6 +21,21 @@
     <ClCompile Include="main.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ticket.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="arr.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sqrt.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="chat.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="_ctime.h">

@@ -12,8 +12,8 @@ using namespace std;
 #include "Tools.h"
 
 void testEff(){
-    BTree<int> bt(4);
-    int count = 1000000;
+    BTree<int> bt(300);
+    int count = 10000000;
     Times::cost("BTree", [&]{
         for (int i = 0; i < count; i++){
             bt.add(i);
@@ -81,7 +81,7 @@ void testInt(){
 
 int main(int argc, const char * argv[]) {
     
-    testInt();
+    //testInt();
 //    BTree<int> bt;
 //    for (int i = 0; i < 100; i++){
 //        bt.add(i);
@@ -99,6 +99,6 @@ int main(int argc, const char * argv[]) {
 //    cout << "contains 67 : " << bt.contains(67) << endl;
 
     
-    //testEff();
+    testEff();
     return 0;
 }

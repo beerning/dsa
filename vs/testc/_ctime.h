@@ -21,7 +21,7 @@ void test() {
 	////char c[7];
 	char* c = (char*)malloc(sizeof(char*));
 
-	//memset(c, 0, sizeof(char *));
+	memset(c, 0, sizeof(char *));
 	strcpy_s(c, sizeof(c), a);
 	strcat_s(c, sizeof(c), b);
 

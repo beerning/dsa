@@ -63,7 +63,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "26-String", "String\String.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "14-Trie", "Trie\Trie.vcxproj", "{F00515EE-F33C-4B1A-A995-34CD7A302E66}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HuffmanTree", "HuffmanTree\HuffmanTree.vcxproj", "{1D76E422-31E6-4AC1-92D7-3A4AEA191AC8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "13-HuffmanTree", "HuffmanTree\HuffmanTree.vcxproj", "{1D76E422-31E6-4AC1-92D7-3A4AEA191AC8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Leetcode", "Leetcode\Leetcode.vcxproj", "{F9F75F0F-43AC-49C7-9387-3C40F6847480}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -321,6 +323,14 @@ Global
 		{1D76E422-31E6-4AC1-92D7-3A4AEA191AC8}.Release|x64.Build.0 = Release|x64
 		{1D76E422-31E6-4AC1-92D7-3A4AEA191AC8}.Release|x86.ActiveCfg = Release|Win32
 		{1D76E422-31E6-4AC1-92D7-3A4AEA191AC8}.Release|x86.Build.0 = Release|Win32
+		{F9F75F0F-43AC-49C7-9387-3C40F6847480}.Debug|x64.ActiveCfg = Debug|x64
+		{F9F75F0F-43AC-49C7-9387-3C40F6847480}.Debug|x64.Build.0 = Debug|x64
+		{F9F75F0F-43AC-49C7-9387-3C40F6847480}.Debug|x86.ActiveCfg = Debug|Win32
+		{F9F75F0F-43AC-49C7-9387-3C40F6847480}.Debug|x86.Build.0 = Debug|Win32
+		{F9F75F0F-43AC-49C7-9387-3C40F6847480}.Release|x64.ActiveCfg = Release|x64
+		{F9F75F0F-43AC-49C7-9387-3C40F6847480}.Release|x64.Build.0 = Release|x64
+		{F9F75F0F-43AC-49C7-9387-3C40F6847480}.Release|x86.ActiveCfg = Release|Win32
+		{F9F75F0F-43AC-49C7-9387-3C40F6847480}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -24,7 +24,6 @@ class ArrayList{
     int _size;
     int _capacity;
     T *_arr;
-    T INIT_VALUE;
     void rangeCheck(int idx) const;
     void rangeCheckForAdd(int idx) const;
     void outBounds(int idx) const;
@@ -49,6 +48,8 @@ public:
     T  remove(int idx);
     void clear();
     
+    T operator[](const int idx);
+
     friend ostream & operator<< <>(ostream &os, const ArrayList<T> &list);
     
 };
@@ -58,7 +59,6 @@ ArrayList<T>::ArrayList(int capacity){
     _size = 0;
     _capacity = (capacity < DEFAULT_CAPACITY) ? DEFAULT_CAPACITY : capacity;
     _arr = new T[_capacity]{};
-    INIT_VALUE = _arr[0];
 }
 
 template <class T>
@@ -137,7 +137,7 @@ T ArrayList<T>::remove(int idx){
         _arr[i] = _arr[i + 1];
         i++;
     }
-    _arr[--_size] = INIT_VALUE;
+    _arr[--_size] = T();
     
     optimize();
     return old;
@@ -198,6 +198,15 @@ void ArrayList<T>::outBounds(int idx) const{
     s.append(" is out of bounds\". Exception:\n");
     cout << s;
     throw s;
+
+    /*string s = "Index " + to_string(idx) + " is out of bounds";
+    throw std::out_of_range(s);*/
+}
+
+template<class T>
+T ArrayList<T>::operator[](const int idx) {
+    rangeCheck(idx);
+    return _arr[idx];
 }
 
 template<class T>

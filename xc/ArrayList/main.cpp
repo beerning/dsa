@@ -46,10 +46,17 @@ void testP2(void){
 }
 
 int main(int argc, const char * argv[]) {
-//
-//    testInt();
-//    testP();
-    testP2();
+
+    //testInt();
+    testP();
+//    testP2();
+
+  /*  ArrayList<int> list;
+    for (int i = 0; i < 10; i++) {
+        list.add(i);
+    }
+    cout << list.valueOf(9) << endl;
+    cout << list[9] << endl;*/
 
     return 0;
 }

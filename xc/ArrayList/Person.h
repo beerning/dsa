@@ -1,11 +1,11 @@
-#ifndef Person_h
+﻿#ifndef Person_h
 #define Person_h
 
 class Person{
     string _name;
     int _age;
 public:
-    Person() : _name("Jack"), _age(20){}
+    Person() : _name("person"), _age(0){}
     Person(int age, string name): _name(name), _age(age){}
     
     void setName(string name){_name = name;}

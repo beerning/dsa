@@ -111,6 +111,20 @@ int partition(int *a, int low, int high){
     return low;
 }
 
+//int partition(std::vector<int>& nums, int low, int high) {
+//    int pivot = nums[high];  // 选择最后一个元素作为基准
+//    int i = low - 1;  // i是较小元素的索引
+//
+//    for (int j = low; j < high; ++j) {
+//        if (nums[j] < pivot) {
+//            ++i;  // 增加较小元素的索引
+//            std::swap(nums[i], nums[j]);
+//        }
+//    }
+//    std::swap(nums[i + 1], nums[high]);
+//    return i + 1;
+//}
+
 void quickSort(int *a, int low, int high){
     if (low >= high) return;
     int pivot = partition(a, low, high);
