@@ -1,12 +1,10 @@
 ﻿//开方的三种算法
 
 #define eps 1e-7
-
-//#define _HUGE_ENUF  1e+300  // _HUGE_ENUF*_HUGE_ENUF must overflow
-//#define INFINITY   ((float)(_HUGE_ENUF * _HUGE_ENUF))
-//#define NAN        (-(float)(INFINITY * 0.0F))
 #include<math.h>
+
 //John Carmack
+// InvSqrt
 //思想：快逆平方根算法（一种计算1/sqrt(x)的高效计算技术）
 //方法：1. 该算法首先将浮点数 x 的位模式解释为一个整数
 //      2. 使用一个魔数 0x5f3759df，结合 x 的位移整数表示，生成 1/sqrt(x)的初始猜测
@@ -24,7 +22,7 @@ float sqrtByCarmack(float x) {
 
     float xhalf = 0.5f * x;
     int i = *(int*)&x; // get bits for floating VALUE
-    i = 0x5f375a86 - (i >> 1); // gives initial guess y0
+    i = 0x5f375a86 - (i >> 1); // gives initial guess y0  //Lemont 0x5f375a86  Carmack(0x5f3759df)
     
     x = *(float*)&i; // convert bits BACK to float
     x = x * (1.5f - xhalf * x * x); // Newton step, repeating increases accuracy
@@ -82,5 +80,6 @@ void testSqrt(){
     printf("sqrtByCarmack: %f 的开方为： %f\n", n, sqrtByCarmack(n));
     printf("sqrtByNewton: %f 的开方为： %f\n", n, sqrtByNewton(n));
     printf("sqrtByBisection: %f 的开方为： %f\n", n, sqrtByBisection(n));
+    printf("库sqrtf: %f 的开方为： %f\n", n, sqrtf(n));
 
 }

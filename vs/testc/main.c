@@ -18,6 +18,9 @@ extern void testShuffle(void);
 extern void testPerm(void);
 extern void testComb(void);
 
+#include<math.h>
+
+
 int main(int argc, const char * argv[]) {
     
     //caizi();
