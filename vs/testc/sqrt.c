@@ -2,12 +2,22 @@
 
 #define eps 1e-7
 
-#define _HUGE_ENUF  1e+300  // _HUGE_ENUF*_HUGE_ENUF must overflow
-#define INFINITY   ((float)(_HUGE_ENUF * _HUGE_ENUF))
-#define NAN        (-(float)(INFINITY * 0.0F))
+//#define _HUGE_ENUF  1e+300  // _HUGE_ENUF*_HUGE_ENUF must overflow
+//#define INFINITY   ((float)(_HUGE_ENUF * _HUGE_ENUF))
+//#define NAN        (-(float)(INFINITY * 0.0F))
 #include<math.h>
 //John Carmack
-//InvSqrt
+//思想：快逆平方根算法（一种计算1/sqrt(x)的高效计算技术）
+//方法：1. 该算法首先将浮点数 x 的位模式解释为一个整数
+//      2. 使用一个魔数 0x5f3759df，结合 x 的位移整数表示，生成 1/sqrt(x)的初始猜测
+//      3. 牛顿-拉夫森迭代（Newton-Raphson Iteration), 利用y = 1 / sqrt(x)构建原函数， 即f(y) = 1 / pow(y, 2) - x, 
+//      y = 1 / sqrt(x)
+// 
+//      导数f(y)` = -2 / pow(y, 3), 
+//      y[n+1] = y[n] - f(y[n]) / f(y[n])` 
+//             = y[n](1.5 - 0.5 * x * pow(y[n], 2)
+//
+
 float sqrtByCarmack(float x) {
     if (x < 0)return NAN;
     if (x == 0) return 0;
@@ -23,6 +33,15 @@ float sqrtByCarmack(float x) {
 
     return 1 / x;
 }
+
+//   x[n+1] = x[n] - f(x[n]) / f(x[n])` 
+//   f(x) = pow(x, 2) - a
+//   f(x)`= 2x
+//   x[n+1] = x[n] - (pow(x, 2) - a) / 2x 
+//          = x[n] - x[n] / 2 + a/2x
+//          = x[n]/2 + a/2x
+//          = 1/2 (x[n] + a/x)
+//
 
 float sqrtByNewton(float n) {
     if (n < 0)return NAN;

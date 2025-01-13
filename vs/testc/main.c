@@ -22,8 +22,8 @@ int main(int argc, const char * argv[]) {
     
     //caizi();
     //run();
-    test_duplicates();
-    //testSqrt();
+    //test_duplicates();
+    testSqrt();
     //testShuffle();
 	//testPerm();
 	//testComb();
