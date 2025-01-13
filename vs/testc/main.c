@@ -22,10 +22,10 @@ int main(int argc, const char * argv[]) {
     
     //caizi();
     //run();
-    //test_duplicates();
+    test_duplicates();
     //testSqrt();
     //testShuffle();
-	testPerm();
+	//testPerm();
 	//testComb();
 
     return 0;

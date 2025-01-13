@@ -46,12 +46,14 @@ void test_duplicates() {
     int arr[] = { 4, 2, 3, 4, 5, 1, 2, 4, 1 };
     int n = sizeof(arr) / sizeof(arr[0]);
     remove_duplicates2(arr, n);
-    /*
+
+    int len = remove_duplicates(arr, n);
+    
 
     printf("过滤后的数组元素：");
-    for (int i = 0; i < new_n; i++) {
+    for (int i = 0; i < len; i++) {
         printf("%d ", arr[i]);
-    }*/
+    }
     printf("\n");
 }
 

@@ -1,34 +1,4 @@
 ﻿
-
-
-
-//阶乘n!
-int factorial(int n) {
-    if (n <= 1)
-        return 1;
-    return n * factorial(n - 1);
-}
-
-//汉诺塔
-void hanoi(int n, int p1, int p2, int p3) {
-    if (1 == n)
-        printf("盘子从%d移到%d\n", p1, p3);
-    else {
-        hanoi(n - 1, p1, p3, p2);
-        printf("盘子从%d移到%d\n", p1, p3);
-
-        hanoi(n - 1, p2, p1, p3);
-    }
-}
-
-
-//斐波那契
-long Fibonaci(int n) {
-    if (n < 2)
-        return 1;
-    return Fibonaci(n - 1) + Fibonaci(n - 2);
-}
-
 /*构造一个斐波那契数组*/
 //void Fibonacci(int* F) {
 //    F[0] = 0;
